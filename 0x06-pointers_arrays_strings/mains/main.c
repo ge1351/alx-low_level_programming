@@ -1,34 +1,59 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    int c3[3][3] = {
-        {0, 1, 5},
-        {10, 11, 12},
-        {1000, 101, 102},
-    };
-    int c5[5][5] = {
-        {0, 1, 5, 12124, 1234},
-        {10, 11, 12, 123521, 12512},
-        {1000, 101, 102, 12545, 214543435},
-        {100, 1012451, 11102, 12545, 214543435},
-        {10, 12401, 10452, 11542545, 1214543435},
-    };
-    print_diagsums((int *)c3, 3);
-    print_diagsums((int *)c5, 5);
-    return (0);
+  char *n = "1234567892434574367823574575678477685785645685876876774586734734563456453743756756784458";
+    char *m = "9034790663470697234682914569346259634958693246597324659762347956349265983465962349569346";
+    char r[100];
+  char r2[10];
+  char r3[11]
+  char *res;
+  
+  res = infinite_add(n, m, r, 100);
+  if (res == 0)
+    {
+      printf("Error\n"); 
+    }
+  else
+    {
+      printf("%s + %s = %s\n", n, m, res); 
+    }
+  n = "1234567890";
+  m = "1";
+  res = infinite_add(n, m, r2, 10;
+  if (res == 0)
+    {
+      printf("Error\n"); 
+    }
+  else
+    {
+      printf("%s + %s = %s\n", n, m, res); 
+    }
+  n = "999999999";
+  m = "1";
+  res = infinite_add(n, m, r2, 10)
+  if (res == 0)
+    {
+      printf("Error\n"); 
+    }
+  else
+    {
+      printf("%s + %s = %s\n", n, m, res); 
+    }
+  res = infinite_add(n, m, r3, 11);
+  if (res == 0)
+    {     
+      printf("Error\n");
+    }  
+  else
+    {
+      printf("%s + %s = %s\n", n, m, res); 
+    }
+  return (0); 
 }
-
-/*
-Sample output:
-
-113, 1016
-1214556093, 1137318
-
-*/
