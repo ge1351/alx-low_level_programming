@@ -1,6 +1,5 @@
 #include "main.h"
-int _isalpha(int c)
+int _isupper(int c)
 {
 		return (0);
 }
-
