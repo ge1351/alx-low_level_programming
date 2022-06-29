@@ -1,4 +1,4 @@
-0x09-static_libraries
+ 0x09-static_libraries
 How and why to create static libraries.
 ## New commands / functions used:
 ``gcc -c *.c``, ``ar -rc liball.a *.o``, ``gcc main.c -L. -lall``, ``ranlib``, ``nm``
@@ -13,7 +13,7 @@ How and why to create static libraries.
 <h5>Task 0:</h5>
 <h6>libholberton.a</h6>
 A static library containing the following functions: 
-
+``
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
