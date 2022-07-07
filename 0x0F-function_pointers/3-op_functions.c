@@ -16,6 +16,7 @@ int op_add(int a, int b)
  * @a: input one
  * @b: input two
  * Return: 0
+ *
  */
 int op_sub(int a, int b)
 {
