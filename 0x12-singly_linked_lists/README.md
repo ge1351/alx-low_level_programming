@@ -17,10 +17,10 @@ Write a function that prints all the elements of a list_t list.
 * If `str` is `NULL`, print `[0] (nil)`
 * You are allowed to use `printf`
 
-**Solution:** [0-print_list.c](https://github.com/Ouyei/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/0-print_list.c)
+**Solution:** [0-print_list.c](https://github.com/ge1351/alx-low_level_programming/edit/master/0x12-singly_linked_lists/0-print_list.c)
 
 ```
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# cat 0-main.c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# cat 0-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -61,8 +61,8 @@ int main(void)
     free(new);
     return (0);
 }
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# ./a
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# ./a
 [5] Hello
 [5] World
 -> 2 elements
@@ -70,7 +70,7 @@ root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lis
 [0] (nil)
 [5] World
 -> 2 elements
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists#
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists#
 ```
 
 
@@ -80,10 +80,10 @@ Write a function that returns the number of elements in a linked `list_t` list.
 
 * Prototype: `size_t list_len(const list_t *h);`
 
-**Solution:** [1-list_len.c](https://github.com/Ouyei/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/1-list_len.c)
+**Solution:** [1-list_len.c](https://github.com/ge1351/alx-low_level_programming/edit/master/0x12-singly_linked_lists/1-list_len.c)
 
 ```
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# cat 1-main.c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# cat 1-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -118,10 +118,10 @@ int main(void)
     free(new);
     return (0);
 }
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c -o b
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# ./b
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c -o b
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# ./b
 -> 2 elements
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists#
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists#
 ```
 
 ## 2. Add node 
@@ -133,10 +133,10 @@ Write a function that adds a new node at the beginning of a list_t list.
 * `str` needs to be duplicated
 * You are allowed to use `strdup`
 
-**Solution:** [2-add_node.c](https://github.com/Ouyei/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/2-add_node.c)
+**Solution:** [2-add_node.c](https://github.com/ge1351/alx-low_level_programming/edit/master/0x12-singly_linked_lists/2-add_node.c)
 
 ```
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# cat 2-main.c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# cat 2-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -183,8 +183,8 @@ int main(void)
     print_list(head);
     return (0);
 }
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_node.c 0-print_list.c -o c
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# ./c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_node.c 0-print_list.c -o c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# ./c
 [3] Zee
 [7] William
 [7] Tasneem
@@ -213,7 +213,7 @@ root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lis
 [8] Augustin
 [5] Asaia
 [9] Alexandro
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists#
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists#
 ```
 
 ## 3. Add node at the end 
@@ -225,10 +225,10 @@ Write a function that adds a new node at the end of a list_t list.
 * `str` needs to be duplicated
 * You are allowed to use `strdup`
 
-**Solution:** [3-add_node_end.c](https://github.com/eyosi05/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)
+**Solution:** [3-add_node_end.c](https://github.com/ge1351/alx-low_level_programming/edit/master/0x12-singly_linked_lists_singly_linked_lists)
 
 ```
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# cat 3-main.c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# cat 3-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -275,8 +275,8 @@ int main(void)
     print_list(head);
     return (0);
 }
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_node_end.c 0-print_list.c -o d
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# ./d
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_node_end.c 0-print_list.c -o d
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# ./d
 [4] Anne
 [6] Colton
 [6] Corbin
@@ -305,7 +305,7 @@ root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lis
 [7] Timothy
 [6] Victor
 [6] Walton
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists#
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists#
 ```
 
 ## 4. Free list 
@@ -314,10 +314,10 @@ Write a function that frees a `list_t` list.
 
 * Prototype: `void free_list(list_t *head);`
 
-**Solution:** [4-free_list.c](https://github.com/Ouyei/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/4-free_list.c)
+**Solution:** [4-free_list.c](https://github.com/ge1351/alx-low_level_programming/edit/master/0x12-singly_linked_lists/4-free_list.c)
 
 ```
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# cat 4-main.c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# cat 4-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -343,8 +343,8 @@ int main(void)
     head = NULL;
     return (0);
 }
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# valgrind ./e
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# valgrind ./e
 ==1891== Memcheck, a memory error detector
 ==1891== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
 ==1891== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
@@ -373,10 +373,10 @@ Write a function that prints `You're beat! and yet, you must allow,\nI bore my h
 
 * You are allowed to use the `printf` function
 
-**Solution:** [100-first.c](https://github.com/Ouyei/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/100-first.c)
+**Solution:** [100-first.c](https://github.com/ge1351/alx-low_level_programming/edit/master/0x12-singly_linked_lists/100-first.c)
 
 ```
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# cat 100-main.c
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# cat 100-main.c
 #include <stdio.h>
 
 /**
@@ -389,10 +389,10 @@ int main(void)
     printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
     return (0);
 }
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-first.c -o first
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# ./first
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-first.c -o first
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# ./first
 You're beat! and yet, you must allow,
 I bore my house upon my back!
 (A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)
-root@952625f534b7:~/holbertonschool-low_level_programming/0x12-singly_linked_lists# 
+root@952625f534b7:~/alx-low_level_programming/0x12-singly_linked_lists# 
 ```
