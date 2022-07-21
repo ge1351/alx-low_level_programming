@@ -1,25 +1,22 @@
-#include <stdlib.h>
 #include "main.h"
-
 /**
-  * flip_bits - ...
-  * @n: ...
-  * @m: ...
-  *
-  * Return: ...
-  */
+ * flip_bits - count the bit to change to another value
+ * @n: the number
+ * @m: the number to compare
+ * Description: compare to ints a count the diferences in bits
+ * section header: the header of this function is holberton.h
+ * Return: the number of different bits
+ */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int mask = 0, count = 0;
+	int i;
 
-	mask = n ^ m;
-	while (mask)
+	i = 0;
+	n = n ^ m;
+	while (n)
 	{
-		if (mask & 1)
-			count++;
-
-		mask >>= 1;
+		i += n & 1;
+		n >>= 1;
 	}
-
-	return (count);
+	return (i);
 }
