@@ -1,69 +1,47 @@
-#include "main.h"
-/**
- * _pow - function that return the
- * value of x raised to the power of y
- *
- * @x: parameter to base
- * @y: parameter of pow
- *
- * Return: End program
- */
-int _pow(int x, int y)
-{
-	if (y < 0)
-	{
-		return (-1);
-	}
-	else if (y == 0)
-	{
-		return (1);
-	}
-	else
-	{
-		y--;
-		x = x * _pow(x, y);
-		return (x);
-	}
+#include <stdlib.h>
+#include <stdio.h>
+#include "holberton.h"
 
-	return (0);
-}
 /**
- * binary_to_uint - function that converts a binary number to an
- * unsigned int
- *
- * @b: Pointer with the string whit the number to convert
- *
- * Return: The number converted
- */
+  * binary_to_uint - Converts a binary number to an unsigned int
+  * @b: The binary string to converts
+  *
+  * Return: The positive number converted from a binary
+  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum = 0;
-	int i, x, n;
+	unsigned int len = 0, count = 0, sum = 0;
 
 	if (b == NULL)
-	{
 		return (0);
-	}
 
-	n = strlen(b) - 1;
-
-	/* Realizamos la operacion para hallar suma */
-	for (x = 0, i = 0; n >= x; n--)
+	len = _strlen(b);
+	while (len--)
 	{
-		switch (b[i])
-		{
-			case '1':
-				sum = sum + _pow(2, n);
-				i++;
-				break;
-			case '0':
-				sum = sum + 0;
-				i++;
-				break;
-			default:
-				return (0);
-		}
+		if (b[len] != 48 && b[len] != 49)
+			return (0);
+
+		if (b[len] == 49)
+			sum += 1 << count;
+
+		count++;
 	}
 
 	return (sum);
+}
+
+/**
+  * _strlen - Returns the length of a string
+  * @s: String to count
+  *
+  * Return: String length
+  */
+int _strlen(const char *s)
+{
+	int c = 0;
+
+	while (s[c])
+		c++;
+
+	return (c);
 }
