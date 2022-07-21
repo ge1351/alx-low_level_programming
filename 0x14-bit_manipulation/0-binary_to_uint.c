@@ -1,47 +1,37 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "holberton.h"
 #include "main.h"
-
 /**
-  * binary_to_uint - Converts a binary number to an unsigned int
-  * @b: The binary string to converts
-  *
-  * Return: The positive number converted from a binary
-  */
+ * binary_to_uint - convert binary to decimal.
+ * @b: the binary number in string format
+ * Description: convert binary to decimal
+ * section header: the header of this function is header.h
+ * Return: this return the convert number.
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len = 0, count = 0, sum = 0;
+	unsigned int result, base;
+	int i;
 
-	if (b == NULL)
+	result = 0;
+	i = 0;
+	base = 1;
+
+	if (!b)
 		return (0);
 
-	len = _strlen(b);
-	while (len--)
+	while (*(b + i))
 	{
-		if (b[len] != 48 && b[len] != 49)
+		if (*(b + i) != '0' && *(b + i) != '1')
 			return (0);
-
-		if (b[len] == 49)
-			sum += 1 << count;
-
-		count++;
+		i++;
+	}
+	for (i--; i >= 0; i--)
+	{
+		if (*(b + i) == '1')
+			result = result + base;
+		base = base * 2;
 	}
 
-	return (sum);
-}
-
-/**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int _strlen(const char *s)
-{
-	int c = 0;
-
-	while (s[c])
-		c++;
-
-	return (c);
+	return (result);
 }
