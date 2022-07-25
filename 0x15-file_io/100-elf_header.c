@@ -5,7 +5,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <elf.h>
-
 /**
  * print_addr - prints address
  * @ptr: magic.
@@ -45,12 +44,10 @@ void print_addr(char *ptr)
 
 			else if (ptr[i] < 0)
 				printf("%02x", 256 + ptr[i]);
-
 		}
 	}
 	printf("\n");
 }
-
 /**
  * print_type - prints type
  * @ptr: magic.
@@ -79,7 +76,6 @@ void print_type(char *ptr)
 	else
 		printf("<unknown: %x>\n", type);
 }
-
 /**
  * print_osabi - prints osabi
  * @ptr: magic.
@@ -101,8 +97,6 @@ void print_osabi(char *ptr)
 
 	printf("  ABI Version:                       %d\n", ptr[8]);
 }
-
-
 /**
  * print_version - prints version
  * @ptr: magic.
@@ -152,7 +146,6 @@ void print_magic(char *ptr)
 	printf("\n");
 
 }
-
 /**
  * check_sys - check the version system.
  * @ptr: magic.
@@ -180,7 +173,6 @@ void check_sys(char *ptr)
 	print_type(ptr);
 	print_addr(ptr);
 }
-
 /**
  * check_elf - check if it is an elf file.
  * @ptr: magic.
@@ -198,7 +190,6 @@ int check_elf(char *ptr)
 
 	return (0);
 }
-
 /**
  * main - check the code for Holberton School students.
  * @argc: number of arguments.
