@@ -1,4 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <fcntl.h>
 #include "main.h"
+#include <unistd.h>
 
 /**
  * read_textfile - reads a text file and prints the letters
